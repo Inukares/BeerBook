@@ -1,0 +1,18 @@
+@import 'icon-spin.scss';
+
+#imgMotherOff {
+  img {
+    max-width: 65px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+    margin-bottom: 8px;
+  }
+}
+
+#imgMotherOn{
+  @extend #imgMotherOff;
+  img{
+    @extend .icon-spin;
+  }
+}

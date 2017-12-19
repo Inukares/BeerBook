@@ -1,0 +1,34 @@
+@import 'icon-spin.scss';
+
+.text-muted {
+  li {
+    color: #868e96 !important;
+    list-style-type: none;
+    font-size: -webkit-calc(100% - 2px);
+    -webkit-padding-start: 0px;
+  }
+  .servingTitle {
+    font-weight: 500px;
+  }
+}
+
+ul {
+  -webkit-padding-start: 0px;
+}
+
+.detailedBeerImageOff{
+  img {
+    max-width: 90px;
+    max-height: 240px;
+    width: auto;
+    height: auto;
+    margin-bottom: 8px;
+  }
+}
+
+.detailedBeerImageOn{
+  @extend .detailedBeerImageOff;
+  img{
+    @extend .icon-spin;
+  }
+}

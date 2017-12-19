@@ -1,0 +1,37 @@
+@import 'icon-spin.scss';
+
+.cardContainer {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  height: 320px;
+  width: 90%;
+  margin: 0.8rem 0.4rem 0.8rem 0.4rem;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+}
+
+.imgContainerOff {
+  img {
+    max-width: 90px;
+    max-height: 160px;
+    width: auto;
+    height: auto;
+    margin-bottom: 8px;
+  }
+}
+
+.imgContainerOn {
+  @extend .imgContainerOff;
+    img {
+      @extend .icon-spin;
+  }
+}
+
+.insideCardContainer {
+}
